@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 1rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+            color: white;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+            <a href="#services">服务</a>
+            <a href="#contact">联系</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>欢迎来到现代网站</h1>
+            <p>探索无限可能，体验卓越服务</p>
+            <button style="margin-top: 1rem; padding: 0.8rem 2rem; background: #e74c3c; border: none; color: white; border-radius: 5px; cursor: pointer;">
+                立即开始
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="features">
+            <div class="card">
+                <h3>响应式设计</h3>
+                <p>完美适配各种设备尺寸，提供最佳浏览体验</p>
+            </div>
+            <div class="card">
+                <h3>现代风格</h3>
+                <p>简洁美观的界面设计，提升用户交互体验</p>
+            </div>
+            <div class="card">
+                <h3>高效性能</h3>
+                <p>优化代码结构，确保快速加载和流畅运行</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 我的网站. 保留所有权利</p>
+    </footer>
+</body>
+</html>
